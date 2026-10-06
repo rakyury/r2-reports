@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>База знаний — Steering Geometry 2</title>
+<style>
+:root{--ink:#18232d;--muted:#63717d;--accent:#116d63;--line:#dce4e5;--paper:#fff;--bg:#f3f6f5}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--accent);text-underline-offset:3px}header{background:#162a2e;color:#fff;padding:44px max(24px,calc((100vw - 1120px)/2)) 34px}.eyebrow{font-size:12px;letter-spacing:.16em;color:#99c7be;text-transform:uppercase}h1{font-size:clamp(28px,4vw,43px);line-height:1.2;max-width:930px;margin:12px 0 18px}header p{color:#c2d4d4;margin:7px 0}header a{color:#adddd2}.meta{font-size:14px}.container{max-width:1168px;margin:auto;padding:28px 24px 60px}.scope{background:#e8eeeb;border-left:4px solid var(--accent);padding:16px 20px;margin-bottom:24px;font-size:14px}.scope b{display:block;margin-bottom:5px}.tools{position:sticky;top:0;z-index:2;background:var(--bg);padding:10px 0 14px;border-bottom:1px solid var(--line);display:flex;gap:10px}.tools input{width:100%;border:1px solid #bbc9c8;border-radius:7px;padding:12px;font:inherit;background:#fff}.tools button,.topic{border:1px solid #bdcbc9;border-radius:7px;background:#fff;color:var(--ink);padding:9px 14px;cursor:pointer;font:inherit}.tools button:focus-visible,.topic:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #278f7d;outline-offset:3px}nav.chapters{display:flex;flex-wrap:wrap;gap:12px 22px;margin:24px 0;font-size:14px}h2{font-size:25px;line-height:1.25;margin:36px 0 9px}.caption{color:var(--muted);font-size:14px;margin:0 0 18px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.topic{font-size:14px}.topic[aria-pressed=true]{background:var(--accent);color:#fff;border-color:var(--accent)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card,.analysis-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:19px 21px}.card-top{display:flex;align-items:center;gap:10px;font-size:12px}.id{color:var(--muted);font-size:12px;font-weight:650;letter-spacing:.06em}.tag{background:#eaf2ef;color:#34655d;padding:2px 8px;border-radius:20px}.time{margin-left:auto;white-space:nowrap;font-size:13px}.card p{margin:13px 0 0}.table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}thead th{background:#eaf0ed;color:#405f58}tbody th{width:27%;font-weight:600}tbody tr:last-child>*{border-bottom:0}.analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.analysis-card h3{font-size:17px;margin:6px 0}.analysis-card p{font-size:15px;margin:8px 0}.analysis-card small{font-size:12px;color:var(--muted)}.questions{background:white;border:1px solid var(--line);border-radius:10px;padding:14px 24px 14px 42px}.questions li{padding:6px 4px}.sources{font-size:14px}.foot{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:18px}.empty{padding:14px 0;color:var(--muted)}[hidden]{display:none!important}@media(max-width:700px){.cards,.analysis-grid{grid-template-columns:1fr}header{padding:28px 24px}.tools{flex-wrap:wrap}.tools input{flex:1;min-width:200px}th,td{padding:12px}tbody th{min-width:130px}}@media print{body{background:white;font-size:12px}header{background:white;color:var(--ink);padding:0 0 20px}header p,header a,.eyebrow{color:var(--ink)}.container{padding:0;max-width:none}.tools,.filters{display:none}.card,.analysis-card{break-inside:avoid}.cards,.analysis-grid{gap:8px}.scope{font-size:11px;padding:10px}.caption,.sources{font-size:11px}h2{font-size:19px;margin-top:24px}h1{font-size:28px}a{color:inherit}.card p{font-size:12px}table{font-size:11px}.foot{font-size:10px}.questions li{padding:2px}nav.chapters{font-size:11px}}
+</style></head><body>
+<header><div class="eyebrow">R2 · База знаний · Видео 01</div><h1>Кастер, KPI, trail и jacking</h1><p>Steering Geometry 2: Caster, KPI, Trails and Jacking (Project 171)</p><p class="meta">Car Design Workshop · Dr. Kev · 30 апреля 2025 · 16:45</p><p><a href="https://www.youtube.com/watch?v=tn899u63hk8" target="_blank" rel="noopener">Открыть исходное видео ↗</a></p></header>
+<main class="container"><div class="scope"><b>Основа разбора</b>Полная английская автоматическая расшифровка: 383 фрагмента. Кадры не проверены, графики не оцифрованы. Таймкоды указывают начало обсуждения; численные значения взяты из речи. Термины нормализованы с учётом ошибок распознавания.</div>
+<div class="tools"><input id="search" type="search" aria-label="Поиск по базе знаний" placeholder="Поиск: кастер, развал, scrub, нагрузка…"><button id="reset" type="button">Сбросить</button><button id="print" type="button">Печать / PDF</button></div>
+<nav class="chapters" aria-label="Главы видео"><a href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=0s" target="_blank" rel="noopener"><b>00:00</b> Введение</a><a href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=102s" target="_blank" rel="noopener"><b>01:42</b> Развал при рулении</a><a href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=292s" target="_blank" rel="noopener"><b>04:52</b> Перемещение пятна контакта</a><a href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=523s" target="_blank" rel="noopener"><b>08:43</b> Jacking: кинематика</a><a href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=937s" target="_blank" rel="noopener"><b>15:37</b> Выбор геометрии</a></nav>
+<section id="video"><h2>Тезисы видео</h2><p class="caption">V01–V10 — сжатые заметки по источнику. Условия показанной модели сохраняются.</p><div class="filters" aria-label="Темы"><button type="button" class="topic" data-topic="Все" aria-pressed="true">Все</button><button type="button" class="topic" data-topic="Развал">Развал</button><button type="button" class="topic" data-topic="Пятно контакта">Пятно контакта</button><button type="button" class="topic" data-topic="Jacking">Jacking</button><button type="button" class="topic" data-topic="Компоновка">Компоновка</button></div><div class="cards"><article class="card searchable" data-topic="Развал"><div class="card-top"><span class="id">V01</span><span class="tag">Развал</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=119s" target="_blank" rel="noopener">01:59 ↗</a></div><p>При нулевом кастере положительный KPI добавляет положительный развал в обе стороны руления; зависимость нелинейная.</p></article>
+<article class="card searchable" data-topic="Развал"><div class="card-top"><span class="id">V02</span><span class="tag">Развал</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=159s" target="_blank" rel="noopener">02:39 ↗</a></div><p>Положительный кастер добавляет отрицательный развал наружному и положительный внутреннему колесу. В показанном диапазоне влияние сильнее KPI.</p></article>
+<article class="card searchable" data-topic="Развал"><div class="card-top"><span class="id">V03</span><span class="tag">Развал</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=203s" target="_blank" rel="noopener">03:23 ↗</a></div><p>Сравнение: KPI 0–20°, кастер 0–10°; выбран ход рейки ≈17 мм.</p></article>
+<article class="card searchable" data-topic="Пятно контакта"><div class="card-top"><span class="id">V04</span><span class="tag">Пятно контакта</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=292s" target="_blank" rel="noopener">04:52 ↗</a></div><p>Scrub radius и mechanical trail задают смещение пятна контакта относительно пересечения оси с дорогой; руление меняет базу и колею.</p></article>
+<article class="card searchable" data-topic="Пятно контакта"><div class="card-top"><span class="id">V05</span><span class="tag">Пятно контакта</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=330s" target="_blank" rel="noopener">05:30 ↗</a></div><p>Исходно: trail 15 мм, scrub 18 мм. Сравнения: trail 30 мм; scrub 60 мм.</p></article>
+<article class="card searchable" data-topic="Jacking"><div class="card-top"><span class="id">V06</span><span class="tag">Jacking</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=532s" target="_blank" rel="noopener">08:52 ↗</a></div><p>Кузов закреплён. Среднее изменение пружин связано с подъёмом, разность — с креном; реальные перемещения требуют учёта жёсткостей.</p></article>
+<article class="card searchable" data-topic="Jacking"><div class="card-top"><span class="id">V07</span><span class="tag">Jacking</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=704s" target="_blank" rel="noopener">11:44 ↗</a></div><p>Jacking увеличивает усилие руления; при заблокированной задней оси может помогать разгружать внутреннее заднее колесо.</p></article>
+<article class="card searchable" data-topic="Jacking"><div class="card-top"><span class="id">V08</span><span class="tag">Jacking</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=735s" target="_blank" rel="noopener">12:15 ↗</a></div><p>Увеличение кастера и scrub усиливает jacking в показанной модели.</p></article>
+<article class="card searchable" data-topic="Jacking"><div class="card-top"><span class="id">V09</span><span class="tag">Jacking</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=795s" target="_blank" rel="noopener">13:15 ↗</a></div><p>Увеличение trail уменьшает средний подъём, одновременно усиливая перекос. KPI также участвует в «caster jacking».</p></article>
+<article class="card searchable" data-topic="Компоновка"><div class="card-top"><span class="id">V10</span><span class="tag">Компоновка</span><a class="time" href="https://www.youtube.com/watch?v=tn899u63hk8&amp;t=937s" target="_blank" rel="noopener">15:37 ↗</a></div><p>Для Project 171: малые scrub/trail, кастер 4°; KPI выбирается с учётом компоновки.</p></article></div><p id="empty" class="empty" hidden>По этим условиям тезисы не найдены.</p></section>
+<section id="glossary"><h2>Словарь для обсуждения</h2><p class="caption">Геометрические определения и обозначения. Углы оси отсчитываются от вертикали; развал колеса записывается отдельно.</p><div class="table-wrap"><table><thead><tr><th>Термин</th><th>Значение</th><th>Единица</th></tr></thead><tbody><tr class="searchable"><th scope="row">Caster / кастер</th><td>Продольный наклон оси поворота относительно вертикали; вид сбоку. Положительный: верх оси наклонён назад.</td><td>°</td></tr><tr class="searchable"><th scope="row">KPI / SAI</th><td>Поперечный наклон оси поворота относительно вертикали; вид спереди.</td><td>°</td></tr><tr class="searchable"><th scope="row">Mechanical trail</th><td>Продольное расстояние между пересечением оси поворота с дорогой и центром пятна контакта.</td><td>мм</td></tr><tr class="searchable"><th scope="row">Scrub radius / плечо обкатки</th><td>Поперечное расстояние между теми же точками.</td><td>мм</td></tr><tr class="searchable"><th scope="row">Camber / развал</th><td>Наклон плоскости колеса относительно вертикали; положительный развал: верх колеса наружу.</td><td>°</td></tr><tr class="searchable"><th scope="row">Jacking при рулении</th><td>Вертикальная реакция подвески и кузова, возникающая при повороте колёс.</td><td>—</td></tr><tr class="searchable"><th scope="row">Rack travel</th><td>Линейный ход рейки. Его связь с углом колеса задаётся геометрией рулевого привода.</td><td>мм</td></tr></tbody></table></div><p class="caption" style="margin-top:12px">Обозначения сверены с <a href="https://www.mathworks.com/help/vdynblks/ref/steeringsystem.html">MathWorks — Steering System</a>. При ненулевом развале плоскость колеса и вертикаль различаются.</p></section>
+<section id="analysis"><h2>Пояснения и применение</h2><p class="caption">A01–A05 — наши пояснения и предложения для проверки. Это отдельный слой базы знаний.</p><div class="analysis-grid"><article class="analysis-card searchable"><span class="id">A01</span><h3>Разделять четыре величины</h3><p>Кастер и KPI описывают направление оси; trail и scrub — её положение относительно пятна контакта. Угла кастера недостаточно для описания всей геометрии.</p><small>Геометрическое пояснение; словарь и модель Steering System.</small></article><article class="analysis-card searchable"><span class="id">A02</span><h3>Считать оба колеса</h3><p>Для проверки сравнивать camber(δ), ход подвески и положение колеса отдельно слева и справа. Угол руля, ход рейки и угол каждого колеса записывать раздельно.</p><small>Предложение для анализа; модели Steering System и K&amp;C.</small></article><article class="analysis-card searchable"><span class="id">A03</span><h3>Проверять рабочую высоту</h3><p>Снять зависимости при рулении и при ходе подвески. K&amp;C-модель отдельно учитывает изменение развала, кастера и положения центра колеса при вертикальном ходе.</p><small>Пояснение по документации Independent Suspension — K and C.</small></article><article class="analysis-card searchable"><span class="id">A04</span><h3>Связать перемещение с нагрузкой</h3><p>В локальном линейном приближении ΔFz ≈ kw · Δzw: нужна жёсткость на колесе. Для свободного кузова затем решается равновесие всего автомобиля; измеренное перемещение само по себе не задаёт изменение нагрузки.</p><small>Собственное пояснение; K&amp;C задаёт вертикальную силу как функцию хода колеса.</small></article><article class="analysis-card searchable"><span class="id">A05</span><h3>Задать критерий выбора</h3><p>Для нашей машины сначала определить цель: развал в повороте, усилие на руле, изменение диагональных нагрузок или компоновка. Значения Project 171 использовать как пример для сравнения, а целевые значения выбирать по результатам измерений.</p><small>Предложение для будущего обсуждения.</small></article></div></section>
+<section id="questions"><h2>Вопросы для следующего обсуждения</h2><ol class="questions"><li class="searchable">Насколько кастер, KPI, trail и scrub нашей машины отличаются от исходной модели?</li><li class="searchable">Как меняется развал наружного колеса при фактическом угле поворота и ходе подвески?</li><li class="searchable">Что изменится после смены вылета диска, проставок, кулака или положения опоры?</li><li class="searchable">Есть ли измеримый jacking на весах при рулении; как меняются все четыре нагрузки?</li><li class="searchable">Какой вклад даёт задний дифференциал в нашем режиме езды?</li><li class="searchable">Для выбранного изменения какой выигрыш ожидаем и какой измеримый результат его подтвердит?</li></ol></section>
+<section class="sources"><h2>Источники и открытые пункты</h2><ul><li><a href="https://www.youtube.com/watch?v=tn899u63hk8" target="_blank" rel="noopener">S1 · Исходное видео</a></li><li><a href="https://www.mathworks.com/help/vdynblks/ref/steeringsystem.html" target="_blank" rel="noopener">S2 · MathWorks — Steering System</a></li><li><a href="https://www.mathworks.com/help/vdynblks/ref/independentsuspensionkandc.html" target="_blank" rel="noopener">S3 · MathWorks — Independent Suspension — K and C</a></li></ul><p>Точные значения с графиков и упомянутая автором публикация о McLaren F1 отдельно не проверены. Применимость к нашей машине пока не проверена измерениями.</p></section>
+<footer class="foot">Версия 1.0 · Разбор: 6 октября 2026 · Идентификатор видео: tn899u63hk8. Полная расшифровка не включена; база содержит краткие заметки, определения и вопросы. Структурированные данные встроены в этот HTML для дальнейшего дополнения.</footer></main>
+<script id="knowledge-data" type="application/json">{
+  "schema_version": 1,
+  "language": "ru",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=tn899u63hk8",
+    "video_id": "tn899u63hk8",
+    "title": "Steering Geometry 2: Caster, KPI, Trails and Jacking (Project 171)",
+    "channel": "Car Design Workshop",
+    "speaker": "Dr. Kev",
+    "published": "2025-04-30",
+    "duration_seconds": 1005,
+    "reviewed": "2026-10-06"
+  },
+  "review_scope": "Прочитана полная английская автоматическая расшифровка: 383 фрагмента. Кадры не проверены, графики не оцифрованы. Термины нормализованы; исходная расшифровка содержит ошибки распознавания.",
+  "video_notes": [
+    {
+      "id": "V01",
+      "time": 119,
+      "topic": "Развал",
+      "text": "При нулевом кастере положительный KPI добавляет положительный развал в обе стороны руления; зависимость нелинейная."
+    },
+    {
+      "id": "V02",
+      "time": 159,
+      "topic": "Развал",
+      "text": "Положительный кастер добавляет отрицательный развал наружному и положительный внутреннему колесу. В показанном диапазоне влияние сильнее KPI."
+    },
+    {
+      "id": "V03",
+      "time": 203,
+      "topic": "Развал",
+      "text": "Сравнение: KPI 0–20°, кастер 0–10°; выбран ход рейки ≈17 мм."
+    },
+    {
+      "id": "V04",
+      "time": 292,
+      "topic": "Пятно контакта",
+      "text": "Scrub radius и mechanical trail задают смещение пятна контакта относительно пересечения оси с дорогой; руление меняет базу и колею."
+    },
+    {
+      "id": "V05",
+      "time": 330,
+      "topic": "Пятно контакта",
+      "text": "Исходно: trail 15 мм, scrub 18 мм. Сравнения: trail 30 мм; scrub 60 мм."
+    },
+    {
+      "id": "V06",
+      "time": 532,
+      "topic": "Jacking",
+      "text": "Кузов закреплён. Среднее изменение пружин связано с подъёмом, разность — с креном; реальные перемещения требуют учёта жёсткостей."
+    },
+    {
+      "id": "V07",
+      "time": 704,
+      "topic": "Jacking",
+      "text": "Jacking увеличивает усилие руления; при заблокированной задней оси может помогать разгружать внутреннее заднее колесо."
+    },
+    {
+      "id": "V08",
+      "time": 735,
+      "topic": "Jacking",
+      "text": "Увеличение кастера и scrub усиливает jacking в показанной модели."
+    },
+    {
+      "id": "V09",
+      "time": 795,
+      "topic": "Jacking",
+      "text": "Увеличение trail уменьшает средний подъём, одновременно усиливая перекос. KPI также участвует в «caster jacking»."
+    },
+    {
+      "id": "V10",
+      "time": 937,
+      "topic": "Компоновка",
+      "text": "Для Project 171: малые scrub/trail, кастер 4°; KPI выбирается с учётом компоновки."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Caster / кастер",
+      "definition": "Продольный наклон оси поворота относительно вертикали; вид сбоку. Положительный: верх оси наклонён назад.",
+      "unit": "°"
+    },
+    {
+      "term": "KPI / SAI",
+      "definition": "Поперечный наклон оси поворота относительно вертикали; вид спереди.",
+      "unit": "°"
+    },
+    {
+      "term": "Mechanical trail",
+      "definition": "Продольное расстояние между пересечением оси поворота с дорогой и центром пятна контакта.",
+      "unit": "мм"
+    },
+    {
+      "term": "Scrub radius / плечо обкатки",
+      "definition": "Поперечное расстояние между теми же точками.",
+      "unit": "мм"
+    },
+    {
+      "term": "Camber / развал",
+      "definition": "Наклон плоскости колеса относительно вертикали; положительный развал: верх колеса наружу.",
+      "unit": "°"
+    },
+    {
+      "term": "Jacking при рулении",
+      "definition": "Вертикальная реакция подвески и кузова, возникающая при повороте колёс.",
+      "unit": "—"
+    },
+    {
+      "term": "Rack travel",
+      "definition": "Линейный ход рейки. Его связь с углом колеса задаётся геометрией рулевого привода.",
+      "unit": "мм"
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "A01",
+      "title": "Разделять четыре величины",
+      "text": "Кастер и KPI описывают направление оси; trail и scrub — её положение относительно пятна контакта. Угла кастера недостаточно для описания всей геометрии.",
+      "source": "Геометрическое пояснение; словарь и модель Steering System."
+    },
+    {
+      "id": "A02",
+      "title": "Считать оба колеса",
+      "text": "Для проверки сравнивать camber(δ), ход подвески и положение колеса отдельно слева и справа. Угол руля, ход рейки и угол каждого колеса записывать раздельно.",
+      "source": "Предложение для анализа; модели Steering System и K&C."
+    },
+    {
+      "id": "A03",
+      "title": "Проверять рабочую высоту",
+      "text": "Снять зависимости при рулении и при ходе подвески. K&C-модель отдельно учитывает изменение развала, кастера и положения центра колеса при вертикальном ходе.",
+      "source": "Пояснение по документации Independent Suspension — K and C."
+    },
+    {
+      "id": "A04",
+      "title": "Связать перемещение с нагрузкой",
+      "text": "В локальном линейном приближении ΔFz ≈ kw · Δzw: нужна жёсткость на колесе. Для свободного кузова затем решается равновесие всего автомобиля; измеренное перемещение само по себе не задаёт изменение нагрузки.",
+      "source": "Собственное пояснение; K&C задаёт вертикальную силу как функцию хода колеса."
+    },
+    {
+      "id": "A05",
+      "title": "Задать критерий выбора",
+      "text": "Для нашей машины сначала определить цель: развал в повороте, усилие на руле, изменение диагональных нагрузок или компоновка. Значения Project 171 использовать как пример для сравнения, а целевые значения выбирать по результатам измерений.",
+      "source": "Предложение для будущего обсуждения."
+    }
+  ],
+  "discussion_questions": [
+    "Насколько кастер, KPI, trail и scrub нашей машины отличаются от исходной модели?",
+    "Как меняется развал наружного колеса при фактическом угле поворота и ходе подвески?",
+    "Что изменится после смены вылета диска, проставок, кулака или положения опоры?",
+    "Есть ли измеримый jacking на весах при рулении; как меняются все четыре нагрузки?",
+    "Какой вклад даёт задний дифференциал в нашем режиме езды?",
+    "Для выбранного изменения какой выигрыш ожидаем и какой измеримый результат его подтвердит?"
+  ],
+  "references": [
+    {
+      "id": "S1",
+      "title": "Исходное видео",
+      "url": "https://www.youtube.com/watch?v=tn899u63hk8"
+    },
+    {
+      "id": "S2",
+      "title": "MathWorks — Steering System",
+      "url": "https://www.mathworks.com/help/vdynblks/ref/steeringsystem.html"
+    },
+    {
+      "id": "S3",
+      "title": "MathWorks — Independent Suspension — K and C",
+      "url": "https://www.mathworks.com/help/vdynblks/ref/independentsuspensionkandc.html"
+    }
+  ],
+  "open_items": [
+    "Не подтверждены точные значения с графиков.",
+    "Упомянутую автором публикацию о McLaren F1 отдельно не проверяли.",
+    "Применимость выводов к нашей машине пока не проверена измерениями."
+  ]
+}</script>
+<script>
+(() => {
+ const input=document.getElementById('search'); const items=[...document.querySelectorAll('.searchable')]; let topic='Все';
+ const normalize=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е');
+ function filter(){ const words=normalize(input.value.trim()).split(/\s+/).filter(Boolean);
+  for(const item of items){const text=normalize(item.textContent);const isVideo=item.classList.contains('card');item.hidden= !words.every(w=>text.includes(w)) || (isVideo&&topic!=='Все'&&item.dataset.topic!==topic);}
+  document.getElementById('empty').hidden=items.some(x=>x.classList.contains('card')&&!x.hidden);
+ }
+ input.addEventListener('input',filter);
+ for(const button of document.querySelectorAll('.topic')){button.setAttribute('aria-pressed',button.dataset.topic===topic?'true':'false');button.addEventListener('click',()=>{topic=button.dataset.topic;for(const b of document.querySelectorAll('.topic'))b.setAttribute('aria-pressed',b.dataset.topic===topic?'true':'false');filter();});}
+ document.getElementById('reset').addEventListener('click',()=>{input.value='';topic='Все';for(const b of document.querySelectorAll('.topic'))b.setAttribute('aria-pressed',b.dataset.topic===topic?'true':'false');filter();input.focus();});
+ document.getElementById('print').addEventListener('click',()=>window.print());
+})();
+</script></body></html>
